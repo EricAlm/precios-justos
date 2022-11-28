@@ -1,0 +1,28 @@
+<div *ngIf="provincia">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="text-center">Precios para {{provincia}}</h1>
+        </div>
+      </div>
+      <div class="row">
+        <table class="table table-hover" id="table">
+            <thead>
+              <tr>
+              <th scope="col"></th>
+              <th scope="col">Producto</th>
+              <th scope="col">Código</th>
+              <th scope="col">Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let precio of preciosArray; let i=index">
+              <th scope="row">{{i+1}}</th>
+              <td>{{precio.descripcion}}</td>
+              <td>{{precio.ean}}</td>
+              <td>{{precio.precio}}</td>
+          </tbody>
+        </table>
+      </div>   
+    </div>
+</div>
