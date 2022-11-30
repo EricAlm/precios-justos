@@ -1,3 +1,4 @@
-.container-main{
-    padding-top: 100px;
+.header{
+    display: flex;
+    align-items: center;
 }

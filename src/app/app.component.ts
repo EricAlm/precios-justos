@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'precios_justos';
+  ngOnInit ():void{
+    document.body.style.backgroundColor = "rgba(81, 131, 205, 0.165)";
+  }
 }

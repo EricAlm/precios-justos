@@ -11,7 +11,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class EntradaComponent implements OnInit {
   provincia_select : Subscription | undefined; 
-  provincia: any;
+  provincia: any = '';
   provincia_format: any;
 
   constructor(
