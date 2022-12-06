@@ -1,25 +1,34 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } 	from '@angular/common/http'; 
-import { environment } from 'src/environments/environment';
-import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http'; 
+import { map } from 'rxjs';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class PreciosService {
-  url: string | undefined;
+  url: string = '';
 
-  constructor(
-    public _http: HttpClient 
+  constructor( private _http: HttpClient ) { }
 
-  ) { 
-    this.url = environment.url;
+  getPrecios(provincia:string) {
+    return this._http.get('./assets/api/' + provincia+'.json')
+      .pipe(
+        map((data: any) => {
+          data.values.shift()
+          data.values.shift()
 
-  }
-
-  getPrecios(url:string):Observable<any>{
-    let headers = new HttpHeaders().set('Content-Type','application/x-www-form-urlencoded');
-    return this._http.get(url, {headers: headers});
+          return data.values.map((producto:any) => {
+            let precioTemp = producto[2]
+              .replace('.', '')
+              .replace(',', '.')
+            return {
+              ean: parseInt(producto[0]),
+              nombre: producto[1],
+              precio: parseFloat(precioTemp),
+            }
+          })
+        })
+      )
   }
 }

@@ -1,6 +1,0 @@
-<div class="form">
-    <select class="form-select" id="floatingSelect" name="prov" #prov="ngModel" [(ngModel)]="provSelected" (change)="selectProv()">
-      <option selected>Seleccione Provincia</option>
-      <option *ngFor="let provincia of provincias">{{provincia.nombre}}</option>
-    </select>
-</div>

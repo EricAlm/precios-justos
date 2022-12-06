@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   ngOnInit ():void{
-    document.body.style.backgroundColor = "rgba(81, 131, 205, 0.165)";
+    document.body.style.backgroundColor = "rgba(96, 144, 216, 0.096)";
   }
 }

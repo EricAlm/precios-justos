@@ -1,0 +1,8 @@
+
+.paginate ::ng-deep .ngx-pagination .current { font-weight: bold; }
+
+.paginate ::ng-deep .ngx-pagination {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.contenedor{ background-color: rgba(51, 85, 143, 0.733); }

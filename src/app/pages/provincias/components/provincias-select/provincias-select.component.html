@@ -1,0 +1,6 @@
+<div class="form">
+    <select class="form-select" id="pet_select" name="prov" [(ngModel)]="provinciaSlctd" (change)="selectProv()">
+      <option [value]="{}" disabled="disabled">Seleccione Provincia</option>
+      <option *ngFor="let provincia of provincias" [ngValue]="provincia">{{provincia.nombre}}</option>
+    </select>
+</div>
