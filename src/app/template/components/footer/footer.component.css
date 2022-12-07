@@ -1,0 +1,9 @@
+.container-fluid{
+    background: #000;
+    color: #ffff;
+    height: 5rem;
+    margin: 0;
+}
+p{
+line-height: 350%;
+}

@@ -1,0 +1,13 @@
+.footer{
+    margin-bottom: 0vh;
+
+}
+.container{
+    min-height: 90vh; 
+}
+
+@media (max-width:629px){
+    .footer{
+        display: none;
+    }
+}
