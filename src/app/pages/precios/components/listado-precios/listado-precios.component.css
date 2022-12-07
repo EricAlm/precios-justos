@@ -5,4 +5,42 @@
     font-size: 1.3em;
     font-weight: bold;
 }
+
 .contenedor{ background-color: rgba(51, 85, 143, 0.733); }
+
+.card{
+	margin: 5px; 
+	overflow: hidden;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+
+.card-text{
+    background-color: rgba(153, 195, 235, 0.593);
+    color: rgb(0, 67, 175);
+    font-weight: bold;
+}
+
+.cyan {
+    border-top: 3px solid rgb(94, 163, 228);
+}
+
+.filtroInput{
+    color: rgb(36, 85, 191);
+    background: #cedff7c8;
+    font-weight: bold;
+}
+
+.filtroInput:focus{ box-shadow: 0 0 0 3px #7195f8; }
+
+.filtroInput:hover{ box-shadow: 0 0 0 2px #7195f8; }
+
+.badge{ margin-left: 20px;}
+
+.orderBox{ background-color: #cedff7c8; }

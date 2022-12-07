@@ -1,0 +1,15 @@
+.textDisabled{
+    color: #89bae2;;
+}
+
+.form select {
+    background-color: #0563af;
+    color: white;
+    border: none;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.form select option { padding: 30px; }
